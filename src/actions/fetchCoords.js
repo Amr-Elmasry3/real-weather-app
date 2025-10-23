@@ -4,7 +4,7 @@ export async function fetchCoords(city) {
   if (city) {
     try {
       const coordsResponse = await fetch(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=9cc78840b765f90d02292b66a2a33b0f`
+        `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=9cc78840b765f90d02292b66a2a33b0f`
       );
 
       coordsResponse.ok
