@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-my-primary: #b5a1e5;
+  --color-on-primary: #100e17;
+  --color-background: #131214;
+  --color-on-background: #eae6f2;
+  --color-surface: #1d1c1f;
+  --color-on-surface: #dddae5;
+  --color-on-surface-variant: #7b7980;
+  --color-on-surface-variant-2: #b9b6bf;
+  --color-outline: #3e3d40;
+  --color-bg-aqi-1: #89e589;
+  --color-on-bg-aqi-1: #1f331f;
+  --color-bg-aqi-2: #e5dd89;
+  --color-on-bg-aqi-2: #33311f;
+  --color-bg-aqi-3: #e5c089;
+  --color-on-bg-aqi-3: #332b1f;
+  --color-bg-aqi-4: #e58989;
+  --on-bg-aqi-4: #331f1f;
+  --bg-aqi-5: #e589b7;
+  --color-on-bg-aqi-5: #331f29;
+  --color-white: hsl(0, 0%, 100%);
+  --color-white-alpha-4: hsla(0, 0%, 100%, 0.04);
+  --color-white-alpha-8: hsla(0, 0%, 100%, 0.08);
+  --color-black-alpha-10: hsla(0, 0%, 0%, 0.1);
+
+  /* Border Radius */
+  --radius-28: 28px;
+  --radius-16: 16px;
+  --radius-pill: 500px;
+  --radius-circle: 50%;
+
+  /* Media Quary */
+  --breakpoint-lg: 1024px;
+  --breakpoint-md: 991px;
+  --breakpoint-sm: 767px;
+  --breakpoint-xs: 590px;
+  --breakpoint-xxs: 490px;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --primary: #b5a1e5;
+  --on-primary: #100e17;
+  --background: #131214; /* Done */
+  --on-background: #eae6f2;
+  --surface: #1d1c1f;
+  --on-surface: #dddae5;
+  --on-surface-variant-2: #b9b6bf;
+  --outline: #3e3d40;
+  --bg-aqi-1: #89e589;
+  --on-bg-aqi-1: #1f331f;
+  --bg-aqi-2: #e5dd89;
+  --on-bg-aqi-2: #33311f;
+  --bg-aqi-3: #e5c089;
+  --on-bg-aqi-3: #332b1f;
+  --bg-aqi-4: #e58989;
+  --on-bg-aqi-4: #331f1f;
+  --bg-aqi-5: #e589b7;
+  --on-bg-aqi-5: #331f29;
+  --white: hsl(0, 0%, 100%);
+  --white-alpha-4: hsla(0, 0%, 100%, 0.04);
+  --white-alpha-8: hsla(0, 0%, 100%, 0.08); /* Done */
+  --black-alpha-10: hsla(0, 0%, 0%, 0.1);
+
+  /* Border Radius */
+  --radius-28: 28px;
+  --radius-16: 16px;
+  --radius-pill: 500px;
+  --radius-circle: 50%;
+
+  /* Transition */
+  --transition: all ease 0.4s;
+}
+
+body {
+  background-color: var(--background);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set Static Stylies */
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+span {
+  line-height: 1;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 1.3;
+}
+input {
+  font-family: var(--font-nunito-sans);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--on-surface);
+  border: none;
+}
+input::placeholder {
+  color: var(--on-surface-variant-2);
+}
+input:focus {
+  outline: none;
+}
+
+/* Custom My Classes */
+.my-transition {
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.border-one {
+  border: 1px solid var(--color-outline);
+}
+/* Handle Style */
+.hidden-scrollbar::-webkit-scrollbar {
+  display: none;
+}
